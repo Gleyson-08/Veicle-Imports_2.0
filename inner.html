@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="JavaScript.js"></script>
+   
+    <link rel="shortcut icon" href="./Img/WhatsApp Image 2023-06-27 at 07.54.50.jpeg" class="rounded-pill" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Veiculos Imports</title>
+    <script>
+        function exibirGeolocalizacao() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      alert("Sua localização atual é: Latitude " + latitude + ", Longitude " + longitude);
+    });
+  } else {
+    alert("Geolocalização não é suportada por este navegador.");
+  }
+}
+
+window.onload = exibirGeolocalizacao;
+    </script>
+    <style>
+        .img{
+            height: 90%;
+            width: 90%;
+        }
+
+        .carousel-inner{
+            min-height: 500px;
+        }
+        @media screen {
+            
+        }
+        
+        .whatsapp-link{
+        position: fixed;
+        height: 60px;
+        width: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #000;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      }
+
+      .fa-whatsapp{
+        margin-top: 16px;
+      }
+      img{
+       text-decoration: white;
+      }
+      #foto{
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="container mt-3">
+        <div class="alert alert-danger alert-dismissible fade show" >
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>ATENÇÃO: </strong>cuidado ao acesso da página!
+        </div>
+        <div class="Veicle">
+            <img src="./Img/WhatsApp Image 2023-06-27 at 07.54.50.jpeg" style="padding: 50px;" class="rounded-pill">
+        </div>
+        <div class="container mt-3">
+            <div  class="navbar" >
+                <ul>
+                    <li><a href="inner.html"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/home.png" alt="home"/>
+                        Home</a></li>
+                    <li><a href="./motos.html"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/motorcycle.png" alt="motorcycle"/>
+                        Motos</a></li>
+                    <li><a href="./carros.html"><img width="30" height="30" src="https://img.icons8.com/android/24/car.png" alt="car"/>
+                        Carros</a></li> 
+                    <li><a href="./sobre.html"><img width="30" height="30" src="https://img.icons8.com/ios/50/treatment-plan--v1.png" alt="treatment-plan--v1"/>
+                        Sobre</a></li>  
+                     <li><a href="./Test_Drive.html"><img width="30" height="30" src="https://img.icons8.com/ios/30/user--v1.png" alt="user--v1"/>Teste drive</a></li>   
+                </ul>
+            </div>
+        </div>
+          <br>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0"  class="active" class="progress-bar bg-dark"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="progress-bar bg-dark" ></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="progress-bar bg-dark"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="progress-bar bg-dark"></button>    
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="progress-bar bg-dark"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5" class="progress-bar bg-dark"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Img/abre-5.webp" class="d-block"  style="width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Img/harley-davidson_sportster-s_2022_4_13072021_33479_960_720.jpg" class="d-block"  style="width: 100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Img/harley-davidson-bronx-2021-1.webp" class="d-block"  style="width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Img/bmw i8.jpg" class="d-block"  style="width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Img/Boxster.webp" class="d-block"  style="width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Img/Merces c180.jpg " class="d-block"  style="width: 100%;">
+                </div>
+            </div>
+          </div>
+    </div>
+<br>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>About</h2>
+            <h5>Imagem:</h5>
+            <div id="foto"><img width="300px" height="200px" src="./Img/WhatsApp Image 2023-06-27 at 07.54.50.jpeg" alt="Logo"></div>
+            <p>Uma descrição sobre a página. Nossos avanços, detalhes e mais informações</p>
+            <h3 class="mt-4">Alguns Links</h3>
+            <p>Compre aqui...</p>
+            <ul class="nav nav-pills flex-column"> 
+                <li class="nav-item"> 
+                    <a class="nav-link active bg-danger " href="https://compass.jeep.com.br">Jeep Compass</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link text-dark" href="https://www2.mercedes-benz.com.br/passengercars/models/saloon/c-class/overview.html">Mercedes C180</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link text-dark" href="https://www.webmotors.com.br/motos/estoque/yamaha/xt-660r">XT-660</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link text-dark" href="https://www.honda.com.br/motos/adventure/trail/xre-300">XRE-300</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8">
+            <h2> GTR-R35</h2>
+            <h5>Nissan GTR-R35, 29 de junho, 2023.</h5>
+            <div ><img class="img" src="./Img/Nissan GTR-R.webp" alt=""></div>
+           
+            <p>O Nissan GT-R é um modelo de automóvel superesportivo produzido pela Nissan, foi anunciado em 2001 com o objectivo de dar sequencia a marca GT-R (que surgiu na década de 1960 que fez sucesso com o Skyline), em 6 de Dezembro de 2007 foi oficialmente lançado no Japão, em 2008 chegou aos Estados Unidos, Canadá e Portugal, no resto do mundo apenas em 2009. O modelo 2007 possui um motor 3.8 V6 Biturbo com potência de 480Cv (362 kW) e 59.95Kgfm (588,0N.m.) de torque, acoplado a uma transmissão automatizada de 6 marchas com dupla embreagem e sistema de tração AWD ATTESA E-TS®, esse conjunto fornece desempenho capaz de levar os 1740Kg de 0–100 km/h em 2.7s e tem velocidade máxima de 385 à 395 km/h.<br> </p>
+            <h2 class="mt-5">Lamborghini</h2>
+            <h5>Lamborghini Urus, 29 de junho, 2023.</h5>
+            <div><img class="img" src="./Img/lamborghini Urus.jpg"></div>
+           
+            <p>Lançado em 2018, o Lamborghini Urus vem mudando a história da marca italiana no mercado automotivo mundial, onde ficou marcada principalmente por seus superesportivos. O Lamborghini Urus, segundo SUV da história da marca, alcançou a marca de mais de 15 mil unidades produzidas desde seu lançamento, batendo assim o recorde de comercialização de um modelo da fabricante a alcançar este volume em menor tempo possível.<br> </p>
+        </div>
+        </div>
+    </div>
+</div>
+<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511946128013" target="_blank">
+    <i class="fa fa-whatsapp">
+      <img width="40" height="40" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+    </i>
+  </a>
+    <footer>
+        <ul class="icones">
+          <p>Nos siga nas redes sociais</p>
+       
+        <a href="https://www.instagram.com/freeway.gmpl/"><img width="32" height="32" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+      </ul>
+      <br><hr>
+      <h3>Marcas</h3><br>
+    <p class="footer"> 
+        Mercedes <br>
+        Porche <br>
+        BWM <br>
+        Harley Davidson <br>
+        Fiat 
+      </p>
+       <p> <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/jeep.png" alt="jeep"/>
+        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/bmw.png" alt="bmw"/>
+        <img width="50" height="50" src="https://img.icons8.com/carbon-copy/50/000000/mercedes-benz.png" alt="mercedes-benz"/>
+        <img width="50" height="50" src="https://img.icons8.com/color/50/000000/fiat.png" alt="fiat"/>
+        <img width="50" height="55" src="./Img/Porsche-Logo.png" alt="Porche">
+        <img width="50" height="50" src="./Img/Harley_davidson_logo-removebg-preview.png" alt="Harley">
+      </p>
+      <hr>
+      <h3>Criado por:</h3>
+      
+      <p>Gleyson Martins<br>
+        Guilherme Leal
+      </p>
+    </footer>
+</div>
+</body>
+</html>

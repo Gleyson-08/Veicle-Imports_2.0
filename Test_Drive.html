@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Img/WhatsApp Image 2023-06-27 at 07.54.50.jpeg" class="rounded-pill" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Veiculos Imports</title> 
+    <style>
+        body
+        {
+            background-color: rgb(213, 213, 213);
+        }
+
+           
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+       /* form {
+            max-width: 400px;
+            margin: 0 auto;
+        }*/
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+        }
+       </style>
+    </style>
+    <script>
+        function exibirMensagem() {
+      alert("Feedback enviado com sucesso :)");
+      alert("Obrigado pelo feedback")
+    }
+    function exibirMensagem1() {
+      alert("Escolha enviada!");
+    }
+    </script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="navbar">
+            <ul>
+                <li><a href="inner.html"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/home.png" alt="home"/>
+                    Home</a></li>
+                <li><a href="./motos.html"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/motorcycle.png" alt="motorcycle"/>
+                    Motos</a></li>
+                <li><a href="./carros.html"><img width="30" height="30" src="https://img.icons8.com/android/24/car.png" alt="car"/>
+                    Carros</a></li> 
+                <li><a href="./sobre.html"><img width="30" height="30" src="https://img.icons8.com/ios/50/treatment-plan--v1.png" alt="treatment-plan--v1"/>
+                    Sobre</a></li> 
+                    <li><a href="./Test_Drive.html"><img width="30" height="30" src="https://img.icons8.com/ios/30/user--v1.png" alt="user--v1"/>
+                     Teste Drive</a></li>
+                </ul>
+        </div>
+    </div>
+   
+    <div class="container mt-3">
+         <h5>Escolha o Veículo</h5>
+                <form class="action=#">
+                    <label for="sel1" class="form-label">Carros</label>
+                    <select class="form-select" id="sel1" name="sellist1" required>
+                        <option>Fiat Toro</option>
+                        <option>Jeep Compass</option>
+                        <option>Porche Boxster</option>
+                        <option>BMW I8</option>
+                    </select>
+                    <label for="sel1" class="form-label">Motos</label>
+                    <select class="form-select" id="sel1" name="sellist1" required>
+                        <option>Harley-Davidson Nightster</option>
+                        <option>Harley-Davidson Naked</option>
+                        <option>Harley-Davidson Sportster S 2022</option>
+                        <option>XRE 300</option>
+                        <option>XT-660</option>
+                        <option>BWM R1200</option>
+                    </select><br>
+                    <button onclick="exibirMensagem1()" type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+            <br>
+            <br>
+ <div class="container mt-3">
+       <h5>Feedback</h5><br>
+        <form action="#" class="was-validated">
+            <div class="input-group mb-3">
+                <span class="input-group-text"><img width="30" height="30" src="https://img.icons8.com/ios/30/user--v1.png" alt="user--v1"/></span>
+                <input type="text" class="form-control" placeholder="Nome" name="name" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"><img width="30" height="30" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/000000/external-email-business-kiranshastry-solid-kiranshastry.png" alt="external-email-business-kiranshastry-solid-kiranshastry"/></span>
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-group mb-3">
+                <label for="avaliacao">Avaliação:</label>
+        <select id="avaliacao" name="avaliacao">
+            <option value="5">Excelente</option>
+            <option value="4">Muito Bom</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Ruim</option>
+        </select>
+        
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <br>
+        <br>
+        <button onclick="exibirMensagem()" type="submit">Enviar Feedback</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+<footer>
+  <ul class="icones">
+      <p>Nos siga nas redes sociais</p>
+        <a href="https://www.instagram.com/freeway.gmpl/"><img width="32" height="32" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+ </ul>
+ <h3>Marcas</h3><br>
+ <p class="footer"> 
+    Mercedes <br>
+    Porche <br>
+    BWM <br>
+ Harley Davidson <br>
+   Fiat 
+  </p>
+   <p> <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/jeep.png" alt="jeep"/>
+     <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/bmw.png" alt="bmw"/>
+        <img width="50" height="50" src="https://img.icons8.com/carbon-copy/50/000000/mercedes-benz.png" alt="mercedes-benz"/>
+        <img width="50" height="50" src="https://img.icons8.com/color/50/000000/fiat.png" alt="fiat"/>
+          <img width="50" height="55" src="./Img/Porsche-Logo.png" alt="Porche">
+        <img width="50" height="50" src="./Img/Harley_davidson_logo-removebg-preview.png" alt="Harley">
+    </p>
+     <h3>Criado por:</h3>
+              
+    <p>Gleyson Martins<br>
+        Guilherme Leal
+  </p>
+</footer>          
+</body>
+</html>

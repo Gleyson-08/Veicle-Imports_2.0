@@ -1,0 +1,68 @@
+.body{
+  background-color:rgb(232, 232, 232);
+}
+.Veicle{
+  text-align: center;
+}
+.rounded-pill{
+  height: 300px;
+  width: 300px;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel img {
+    width: 300px; /* Largura desejada */
+    height: 600px; /* Altura desejada */
+    object-fit: cover; /* Manter proporção e cortar se necessário */
+  }
+
+  .navbar {
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navbar li a {
+    display: block; 
+    padding: 8px 60px;
+    color: black;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: rgb(162, 162, 162);
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+  }
+  footer .icones {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  footer p{
+    margin-top: 30px;
+    text-decoration: underline;
+    padding: 10px;
+  }
+ h2,h4, h5, h3{
+  text-align: center;
+  text-decoration: underline;
+ }
+
+ #texto{
+  text-indent: 2em;
+ }
+
+ 
